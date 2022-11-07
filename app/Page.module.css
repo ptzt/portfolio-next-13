@@ -1,0 +1,31 @@
+.form {
+    display: inline-block;
+}
+
+.icon {
+    color: white;
+    background-color: #070A11;
+    border: #070A11;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.icons {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.title {
+    font-size: 40px;
+    line-height: 36px;
+    font-weight: 900;
+}
+
+.text {
+    font-size: 18px;
+    line-height: 29px;
+    font-weight: 400;
+    opacity: .8;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
