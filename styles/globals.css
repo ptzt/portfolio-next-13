@@ -10,12 +10,15 @@ a {
   text-decoration: none;
 }
 
-* {}
+* {
+  color: white;
+}
 
 body {
   padding: 100px;
   max-width: 800px;
   margin: 0 auto;
+  background-color: #000000;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -25,7 +28,7 @@ body {
 
   body {
     color: white;
-    background: #000000;
+    background-color: #000000;
   }
 }
 
