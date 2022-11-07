@@ -2,7 +2,6 @@
 import { useState } from 'react'
 import * as emailjs from 'emailjs-com'
 import styles from './Contact.module.css'
-
 const Talk = () => {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
@@ -10,15 +9,12 @@ const Talk = () => {
 
     const submit = () => {
         if (email && message) {
-            const serviceId = process.env.serviceId;
-            const templateId = process.env.templatedId;
-            const userId = process.env.userId;
             const templateParams = {
                 email,
                 message
             };
 
-            emailjs.send(serviceId, templateId, templateParams, userId)
+            emailjs.send(process.env.NEXT_PUBLIC_SERVICE_ID, process.env.NEXT_PUBLIC_TEMPLATE_ID, templateParams, process.env.NEXT_PUBLIC_USER_ID)
                 .then(response => console.log(response))
                 .then(error => console.log(error));
 
