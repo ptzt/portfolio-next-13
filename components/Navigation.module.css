@@ -1,11 +1,5 @@
 .text:hover {
-    background-color: #f0f0f0;
-    color: #000000;
-    cursor: pointer;
-    line-height: 2em;
-    border: 1px solid white;
-    border-radius: 200px;
-    padding: 10px;
+    text-decoration: underline;
 }
 
 .navigation {
